@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- descriotion tag used by search enginer. the blub in goofle -->
+    <meta name="description" content="This is a practice webpage to learning html">
+    <!-- search engine keywords -->
+    <meta name="keywords" content="htnml5,udemy,learn,code">
+    <meta name="author" content="Jordon Rowley">
+    <!-- for responsive websites, needed for bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Jordons News</title>
+  </head>
+
+  <body>
+
+    <div id="context">
+      <ul class="context-menu">
+        <li> <a class="hidden newtab" href=#>Open in new tab</a> </li>
+        <li> <a href=#>Back</a> </li>
+        <li> <a href=#>Forward</a> </li>
+        <li> <a href=#>Reload</a> </li>
+        <li> <a class="hidden saveimg" href=#>Save Image As</a> </li>
+        <li> <a class="hidden save" href=#>Save As</a> </li>
+        <li> <a href=#>Inspect Element</a> </li>
+      </ul>
+    </div>
+
+    <header id="main-header">
+      <h1 id="site-title">Jordons News Site!</h1>
+      <ul class="profile-menu">
+        <li>
+          <a class="profle-menu-trigger" data-trigger="dropdown" href="#">Logged in as Jordon</a>
+
+          <ul class = "submenu">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+
+        </li>
+      </ul>
+    </header>
+
+    <input placeholder="Search..." class="my-input"/>
+
+    <!-- <script>
+      document.write("Hello World");
+    </script> -->
+    <section>
+      <p>This is some text</p>
+      <p>This is some more text that would normally exist in p tags</p>
+
+      <form action="submit.php">
+        <textarea class="text" placeholder="type something"></textarea> <br/>
+        <input name="Email" placeholder = "Email"/><br/><br/>
+        <p class = "status"></p>
+
+        <button id="append">Append</button>
+        <button id="prepend">Prepend</button>
+        <button id="replace">Replace</button>
+      </form>
+      <img src="images/dog.jpg"></image>
+    </section>
+
+    <section id="main">
+      <!-- target blank means open in new tab  -->
+      <a href="https://google.com" target="_blank"> GO To Google</a>
+      <p class = "my-selector">
+        Nam sodales euismod mi sit amet imperdiet. Cras laoreet turpis in neque semper malesuada. Etiam pellentesque pretium velit in euismod. In rhoncus velit risus, eget feugiat erat efficitur vel. Phasellus volutpat nisi dignissim, hendrerit augue in, eleifend nulla. Nam consectetur, nisl vitae vehicula ultricies, lectus felis consequat ipsum, sed accumsan nibh turpis a velit. Integer vel lobortis leo, vulputate hendrerit est. Proin et ante malesuada, finibus nibh non, aliquam dolor. Pellentesque sodales, massa ut ornare lacinia, sem elit hendrerit ipsum, et suscipit ligula elit sed nisi. Nulla scelerisque, quam et suscipit consectetur, mauris tellus eleifend elit, quis congue augue sapien in erat. Phasellus eu viverra nisi. Quisque dui libero, porta id lacus quis, interdum mattis nisi. Morbi eu justo a nisl iaculis semper eu a diam. Phasellus feugiat vel mi sit amet lobortis. Curabitur a sapien venenatis dui euismod vehicula. Fusce sit amet purus a neque volutpat posuere pellentesque quis tortor.
+      </p>
+    </section>
+
+    <section id="top-stories">
+        <article>
+            <!-- <img src="images/dog.jpg"> -->
+            <div class="article-image" style="background:url(images/dog.jpg)"></div>
+            <h3>Dog Kidnapped!</h3>
+            <p>Dog napping normal, but this is reall bad.. <a href="#" class="more-link">Read More...</a></p>
+        </article>
+
+        <article>
+            <!-- <img src="images/chocolate.jpg"> -->
+            <div class="article-image" style="background:url(images/chocolate.jpg)"></div>
+            <h3>Look at this chocolate!</h3>
+            <p>Random placeholder text about chocolate <a href="#" class="more-link">Read More...</a></p>
+        </article>
+
+        <article>
+            <!-- <img src="images/goat.jpg"> -->
+            <div class="article-image" style="background:url(images/goat.jpg)"></div>
+            <h3>This goat is cool</h3>
+            <p>Random placeholder text about goat <a href="#" class="more-link bolded-link">Read More...</a></p>
+        </article>
+
+        <div class="my-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta felis lectus, non porta nisi dictum sed. Sed a pellentesque urna, non venenatis magna. Sed eu nunc dignissim, varius leo vel, congue neque. Phasellus porttitor massa congue metus tincidunt, ac sagittis quam gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse felis nisi, gravida eu feugiat at, tincidunt eget felis. Nam dapibus posuere augue, ultrices ultrices ex tempor nec. Nam congue non lectus et molestie. Sed et pulvinar erat.
+          </p>
+          <p>
+            Donec vel est non leo posuere vestibulum suscipit vitae eros. Duis eget felis id elit porta mattis. Sed congue massa arcu, vel suscipit ante cursus imperdiet. Suspendisse nunc sem, ullamcorper sit amet urna a, lacinia vulputate massa. Vivamus ultrices ex ut blandit convallis. Nunc eget ligula a tellus sollicitudin ullamcorper. Aliquam volutpat blandit blandit.
+          </p>
+          <p>
+            Curabitur laoreet hendrerit neque non dignissim. Nulla facilisi. Nullam laoreet, leo a fringilla malesuada, enim lacus condimentum leo, et sodales mi leo sed diam. Ut tristique, nibh eget pharetra consectetur, dui sem maximus nisi, et ultricies dolor erat vel magna. Nullam volutpat ultricies ligula, ac convallis est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id dictum est. Suspendisse potenti. Donec feugiat felis quam, ut szemper est congue id. Ut egestas dui a eros pellentesque varius. Sed dictum venenatis libero, vel venenatis tellus.
+          </p>
+          <p>
+            Morbi elementum magna sit amet urna egestas iaculis. Integer nisl odio, lacinia nec condimentum a, tincidunt nec felis. Maecenas lacinia elementum pretium. Donec eu tortor sit amet lectus efficitur fringilla at cursus ligula. Proin suscipit elit ipsum. Mauris ut diam et lorem gravida ultrices id ut nisl. Nulla mollis ac nisl id aliquam. Aenean sit amet elit eros. Aenean a quam placerat, sagittis orci ac, mollis dolor. Ut nec elit accumsan, interdum mi eu, tempus nisi. Nam lorem metus, dictum et dui ut, bibendum tincidunt lectus. Fusce id felis quis lectus volutpat placerat nec nec augue. Aliquam gravida pharetra felis, nec imperdiet ligula. Nulla et auctor diam.
+          </p>
+      </div>
+      <br/>
+      <div class="input-holder">
+        <!-- can use onclick="buttonClicked()" property here, likely used in react -->
+        <!-- value property will set initial value -->
+        <input class="name-input" placeholder="First Name">
+        <input class="my-textarea" placeholder="Your Message"></message>
+        <button id="go-button" type="button" name="go-button" >Go</button>
+        <p id="text">Click that button</p>
+      </div>
+      <br/>
+      <br/>
+      <h1>JQUERY STUFF</h1>
+      <div class="jqinput-holder">
+        <!-- can use onclick="buttonClicked()" property here, likely used in react -->
+        <!-- value property will set initial value -->
+        <input class="jqname-input" placeholder="First Name">
+        <input class="jqmy-textarea" placeholder="Your Message"></message>
+        <button id="jqgo-button" type="button" name="go-button" >Go</button>
+        <p id="jqtext">Click that button</p>
+      </div>
+      <br/>
+      <br/>
+    </section>
+    <!-- always load js after everything in oyd not in header -->
+    <!-- include jquery before script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/fakequery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300 !important;
+  text-shadow:1px 1px 2px #ddd;
+  margin-top: 100px;
+}
+body h1 {
+  font-weight: 300;
+  margin: 20px 30px;
+}
+
+#main-header {
+  border-bottom: 2px solid #000;
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,.9);
+  margin:0px;
+  top: 0px;
+  left:0px;
+}
+
+/* psuedo element */
+#main-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height:0px;
+  background: rgb(104, 127, 207);
+
+}
+
+#top-stories {
+  width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+article {
+  max-width:301px;
+  display: inline-block;
+  border:1px solid #000;
+  padding: 10px;
+  margin: 0px;
+  box-shadow:  2px 2px 6px rgba(0,0,0,.3);
+  /* any transition happens over 1 s ie when we change box shadow for hgover
+  psuedo-state can specify all or multiple using comma */
+  transition: box-shadow 500ms, background 1s;
+  transition-delay: 30ms;
+}
+
+article:hover {
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+  background: #aaa
+}
+
+article img {
+  width: 100%;
+  height: 100px;
+}
+
+a {
+  /* text-decoration:overline line-through underline blink; */
+  /* text-decoration-color: black;
+  text-decoration-line: none; */
+  /* text-decoration-style: dashed; */
+}
+
+p {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-indent: 20px;
+  text-align: center;
+}
+
+.input-holder, .jqinput-holder {
+  text-align: center;
+}
+
+.article-image {
+  height: 200px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  /* border-top-left-radius: 20px 50px; */
+  border-radius: 15px;
+}
+
+#site-title {
+  font-family: Caveat, sans-serif;
+  display: inline-block;
+}
+
+.profile-menu {
+  list-style: none;
+  float:right;
+  margin-top: 30px;
+  margin-right: 20px;
+  padding: 0px;
+}
+
+[data-trigger="dropdown"] {
+  padding-bottom: 30px;
+}
+
+.submenu {
+  list-style: none;
+  border: 1px solid #aaa;
+  background: #fff;
+  margin-top: 30px;
+  padding: 0px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+  width: 300px;
+  position: absolute;
+  right: 10px;
+  list-style-type: none;
+  display: none;
+}
+
+.submenu.active {
+  display:block;
+}
+
+.submenu a {
+  text-decoration: none;
+  padding: 10px 10px;
+  display: block;
+  color: #333;
+  text-shadow: none;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.submenu a:hover {
+  background: #eee
+}
+
+section {
+  max-width: 100%;
+  width: 900px;
+  margin: auto;
+}
+
+.more-link {
+  font-style: italic;
+}
+
+.bolded-link {
+  font-weight: 900;
+}
+
+.more-link.bolded-link {
+  color: #f00
+}
+
+/* psuedostates are what elements do when user does action ie hover, click,
+just do selector:state after  */
+
+/* a:hover, a.more-link.bolded-link:hover {
+  color: #8f8;
+} */
+
+.my-input, .my-textarea, .name-input, .jqmy-input, .jqmy-textarea, .jqname-input {
+  display: block;
+  width:90%;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  resize: none;
+}
+
+
+
+.my-input:focus, .jqmy-input:focus {
+  background: rgba(106, 221, 98, .5);
+  outline: none;
+}
+
+article:active {
+  opacity: .4;
+}
+
+.my-text {
+  height: 600px;
+  max-height: 600px;
+  margin-top: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#context{
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+  display: none;
+}
+
+.context-menu {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.context-menu a {
+  margin: 0px;
+  display: block;
+  width: 200px;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.context-menu a:hover {
+  background: #aaa;
+}
+
+/* utility class, doesnt style */
+.context-menu a.hidden {
+  display: none;
+}
+
+.status {
+  /*display: none;*/
+}
